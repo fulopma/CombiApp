@@ -19,7 +19,7 @@ class EmployeeViewController: UIViewController {
         [
             "first name": "Dwight",
             "last name": "Schrute",
-            "title": "Assisstant to the Regional Manager",
+            "title": "Assistant to the Regional Manager",
             "email": "dwight.schrute@dundermifflin.com",
             "salary": "50000",
         ],
@@ -100,7 +100,7 @@ extension EmployeeViewController: UITableViewDataSource {
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "employeeCell", for: indexPath) as? EmployeeTableViewCell
-        cell?.fullNameLabel.text = (employees[indexPath.row]["firstName"] ?? "") + " " + (employees[indexPath.row]["lastName"] ?? "")
+        cell?.fullNameLabel.text = (employees[indexPath.row]["first name"] ?? "") + " " + (employees[indexPath.row]["last name"] ?? "")
         cell?.titleLabel.text = employees[indexPath.row]["title"] ?? ""
         return cell ?? UITableViewCell()
     }
