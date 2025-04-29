@@ -106,7 +106,6 @@
                                             </subviews>
                                         </tableViewCellContentView>
                                         <connections>
-                                            <outlet property="fullNameCell" destination="0LN-7r-ZQs" id="cJb-DT-bxI"/>
                                             <outlet property="fullNameLabel" destination="0LN-7r-ZQs" id="RQi-pR-uML"/>
                                             <outlet property="titleLabel" destination="Tc1-sG-0zf" id="kNY-lD-Ff4"/>
                                         </connections>
@@ -227,7 +226,6 @@
                                             <outlet property="countryCapitalLabel" destination="hgY-vk-cFM" id="JFf-ZR-j4G"/>
                                             <outlet property="countryCodeLabel" destination="rIf-Z4-g5s" id="hWv-I7-5nC"/>
                                             <outlet property="countryFlagLabel" destination="Wy0-bv-OGY" id="YbQ-1z-caU"/>
-                                            <outlet property="countryLabel" destination="Y7G-xf-RCo" id="WCU-eh-UPd"/>
                                             <outlet property="countryNameLabel" destination="Y7G-xf-RCo" id="pti-cu-Syq"/>
                                             <outlet property="countryRegionLabel" destination="Xmm-IZ-XFG" id="IMn-Wj-8as"/>
                                             <outlet property="currencyCodeLabel" destination="RQa-wh-qP0" id="qeq-Ey-Y8M"/>
