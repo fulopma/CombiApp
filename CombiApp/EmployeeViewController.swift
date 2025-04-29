@@ -109,7 +109,13 @@ extension EmployeeViewController: UITableViewDataSource {
 
 extension EmployeeViewController: UITableViewDelegate {
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        // TODO: Implement employee details
-        return
+        
+        let sb = UIStoryboard(name: "Main", bundle: nil)
+        guard let vc = sb.instantiateViewController(withIdentifier: "EmployeeDetailsViewController")
+                as? EmployeeDetailsViewController else{
+            return
+        }
+        vc.employee = employees[indexPath.row]
+        self.present(vc, animated: true)
     }
 }
