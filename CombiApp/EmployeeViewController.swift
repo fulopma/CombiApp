@@ -87,7 +87,6 @@ class EmployeeViewController: UIViewController {
         super.viewDidLoad()
         employeeTable.dataSource = self
         employeeTable.delegate = self
-        // Do any additional setup after loading the view.
     }
 
 }

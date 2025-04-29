@@ -19,6 +19,8 @@ class LoginViewController: UIViewController {
     
     @IBAction func loginButtonPress(_ sender: Any) {
         if usernameTextField.text == "admin" && passwordTextField.text == "admin" {
+            usernameTextField.text = ""
+            passwordTextField.text = ""
             performSegue(withIdentifier: "loginSegue", sender: nil)
         }
     }
