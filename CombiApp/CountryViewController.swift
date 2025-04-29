@@ -9,6 +9,7 @@ import UIKit
 
 class CountryViewController: UIViewController {
 
+    @IBOutlet weak var countryTable: UITableView!
     override func viewDidLoad() {
         super.viewDidLoad()
 

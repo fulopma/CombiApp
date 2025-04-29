@@ -73,7 +73,7 @@
         <!--Employee-->
         <scene sceneID="nbw-qB-s90">
             <objects>
-                <viewController id="ISY-5E-lQN" customClass="CountryViewController" customModule="CombiApp" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="ISY-5E-lQN" customClass="EmployeeViewController" customModule="CombiApp" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="wQN-c3-2uA">
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -124,6 +124,9 @@
                         </constraints>
                     </view>
                     <tabBarItem key="tabBarItem" title="Employee" image="person" catalog="system" id="b0y-91-4vF"/>
+                    <connections>
+                        <outlet property="employeeTable" destination="LIh-ht-BiO" id="2HM-43-3rH"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="LAt-Dn-IK3" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -132,7 +135,7 @@
         <!--Country-->
         <scene sceneID="uxg-es-vOr">
             <objects>
-                <viewController id="KNg-UF-JTM" customClass="EmployeeViewController" customModule="CombiApp" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="KNg-UF-JTM" customClass="CountryViewController" customModule="CombiApp" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="MUu-bP-ncn">
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -247,6 +250,9 @@
                         </constraints>
                     </view>
                     <tabBarItem key="tabBarItem" title="Country" image="globe.desk" catalog="system" id="0pj-Fi-u5h"/>
+                    <connections>
+                        <outlet property="countryTable" destination="8Aw-5o-gMX" id="JS4-h2-aKd"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="9py-KD-wjd" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>

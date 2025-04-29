@@ -17,7 +17,7 @@ class CountryTableViewCell: UITableViewCell {
     @IBOutlet weak var countryRegionLabel: UILabel!
     @IBOutlet weak var currencyCodeLabel: UILabel!
     @IBOutlet weak var currencyNameLabel: UILabel!
-    @IBOutlet weak var currencySymbolLabel: UILabel!    
+    @IBOutlet weak var currencySymbolLabel: UILabel!  
     @IBOutlet weak var languageCodeLabel: UILabel!
     @IBOutlet weak var languageNameLabel: UILabel!
     override func awakeFromNib() {
