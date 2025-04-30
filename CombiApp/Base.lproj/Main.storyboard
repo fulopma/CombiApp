@@ -32,21 +32,21 @@
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="7ef-NQ-Pwx">
+                            <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Username" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="7ef-NQ-Pwx">
                                 <rect key="frame" x="106.66666666666669" y="344.66666666666669" width="180" height="37"/>
                                 <color key="backgroundColor" systemColor="opaqueSeparatorColor"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="37" id="LBh-BW-VV4"/>
-                                    <constraint firstAttribute="width" constant="180" id="QTC-Hg-D1Z"/>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="180" id="QTC-Hg-D1Z"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" textContentType="username"/>
                             </textField>
-                            <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="DRN-58-Bt1">
+                            <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Password" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="DRN-58-Bt1">
                                 <rect key="frame" x="106.66666666666669" y="391.66666666666669" width="180" height="37"/>
                                 <color key="backgroundColor" systemColor="opaqueSeparatorColor"/>
                                 <constraints>
-                                    <constraint firstAttribute="width" constant="180" id="i3K-zr-shs"/>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="180" id="i3K-zr-shs"/>
                                     <constraint firstAttribute="height" constant="37" id="wi2-HM-Z1Z"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
@@ -218,7 +218,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="or7-0d-jen" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="4308" y="400"/>
+            <point key="canvasLocation" x="4335" y="382"/>
         </scene>
         <!--Country-->
         <scene sceneID="uxg-es-vOr">
