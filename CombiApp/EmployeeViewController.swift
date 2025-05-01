@@ -115,6 +115,6 @@ extension EmployeeViewController: UITableViewDelegate {
             return
         }
         vc.employee = employees[indexPath.row]
-        self.present(vc, animated: true)
+        self.navigationController?.pushViewController(vc, animated: true)
     }
 }

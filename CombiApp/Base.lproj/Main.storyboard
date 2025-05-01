@@ -87,7 +87,7 @@
             </objects>
             <point key="canvasLocation" x="-60.305343511450381" y="3.5211267605633805"/>
         </scene>
-        <!--Employee View Controller-->
+        <!--Employee-->
         <scene sceneID="nbw-qB-s90">
             <objects>
                 <viewController id="ISY-5E-lQN" customClass="EmployeeViewController" customModule="CombiApp" customModuleProvider="target" sceneMemberID="viewController">
@@ -149,6 +149,9 @@
                             <constraint firstItem="DCi-5R-WCT" firstAttribute="trailing" secondItem="LIh-ht-BiO" secondAttribute="trailing" id="urU-3C-88d"/>
                         </constraints>
                     </view>
+                    <tabBarItem key="tabBarItem" title="Employee" image="person" catalog="system" id="6CA-3l-mkI">
+                        <color key="badgeColor" systemColor="labelColor"/>
+                    </tabBarItem>
                     <navigationItem key="navigationItem" id="mch-Nd-923"/>
                     <connections>
                         <outlet property="employeeTable" destination="LIh-ht-BiO" id="2HM-43-3rH"/>
@@ -407,55 +410,20 @@
                     </tabBar>
                     <connections>
                         <segue destination="KNg-UF-JTM" kind="relationship" relationship="viewControllers" id="Ess-UM-6D3"/>
-                        <segue destination="moq-uA-Vgb" kind="relationship" relationship="viewControllers" id="urh-eq-GkK"/>
+                        <segue destination="ISY-5E-lQN" kind="relationship" relationship="viewControllers" id="KqL-TI-HJc"/>
                     </connections>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="PHm-RD-DWS" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="874" y="4"/>
         </scene>
-        <!--Employee-->
-        <scene sceneID="k4o-lf-XPa">
-            <objects>
-                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="moq-uA-Vgb" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Employee" image="person" catalog="system" id="b0y-91-4vF"/>
-                    <toolbarItems/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="KWF-Rq-vN0">
-                        <rect key="frame" x="0.0" y="118" width="393" height="44"/>
-                        <autoresizingMask key="autoresizingMask"/>
-                    </navigationBar>
-                    <nil name="viewControllers"/>
-                    <connections>
-                        <segue destination="ISY-5E-lQN" kind="relationship" relationship="rootViewController" id="Ik1-OJ-MMG"/>
-                    </connections>
-                </navigationController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="XQj-KU-F6D" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="1893.8931297709923" y="367.6056338028169"/>
-        </scene>
-        <!--Navigation Controller-->
-        <scene sceneID="5fG-fI-Ld0">
-            <objects>
-                <navigationController storyboardIdentifier="NavEmployeeDetail" automaticallyAdjustsScrollViewInsets="NO" id="naY-DD-RFZ" sceneMemberID="viewController">
-                    <toolbarItems/>
-                    <navigationItem key="navigationItem" id="d1t-rC-3Kv"/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="Lc9-tv-IfL">
-                        <rect key="frame" x="0.0" y="118" width="393" height="44"/>
-                        <autoresizingMask key="autoresizingMask"/>
-                    </navigationBar>
-                    <nil name="viewControllers"/>
-                    <connections>
-                        <segue destination="uHm-Co-nsP" kind="relationship" relationship="rootViewController" id="USZ-8e-oIQ"/>
-                    </connections>
-                </navigationController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="TKi-o1-pdv" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="3520" y="382"/>
-        </scene>
     </scenes>
     <resources>
         <image name="globe.desk" catalog="system" width="115" height="128"/>
         <image name="person" catalog="system" width="128" height="121"/>
+        <systemColor name="labelColor">
+            <color white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
         <systemColor name="linkColor">
             <color red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
